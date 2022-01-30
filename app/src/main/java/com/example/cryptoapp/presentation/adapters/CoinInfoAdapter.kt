@@ -2,16 +2,12 @@ package com.example.cryptoapp.presentation.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewbinding.ViewBinding
 import com.example.cryptoapp.R
 import com.example.cryptoapp.databinding.ItemCoinInfoBinding
 import com.example.cryptoapp.domain.CoinInfo
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.item_coin_info.view.*
 
 class CoinInfoAdapter(private val context: Context) :
     ListAdapter<CoinInfo,CoinInfoViewHolder>(CoinInfoDiffCallBack) {
